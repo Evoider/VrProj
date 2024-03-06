@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -33,24 +34,33 @@ public class GameManager : MonoBehaviour
     {
         _lamps[id] = isOn;
 
-        if (isOn)
+        if (isOn) StartCoroutine(CheckLight(id));
+    }
+
+    private IEnumerator CheckLight(int id)
+    {
+        yield return new WaitForSeconds(1);
+
+        for (int i = 0; i < id; i++)
         {
-            for (int i = 0;i < id; i++)
+            Debug.Log(_lamps[i]);
+            if (!_lamps[i])
             {
-                if (!_lamps[i])
-                {
-                    OnLampsReset?.Invoke();
-                    return;
-                }
+                OnLampsReset?.Invoke();
+                yield break;
             }
         }
 
-        if (id == 5)
+        yield return new WaitForSeconds(1);
+
+        if (id == 4)
         {
             Debug.Log("Puzzle solved");
             OnLampsSolved?.Invoke();
             PuzzleComplete();
         }
+
+        yield return null;
     }
 
     private void PuzzleComplete()
