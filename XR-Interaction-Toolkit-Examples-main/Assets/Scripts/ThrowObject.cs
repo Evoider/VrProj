@@ -9,4 +9,10 @@ public class ThrowObject : MonoBehaviour
     {
         _rb.AddForce(Vector3.up * _forceAmount, ForceMode.Impulse);
     }
+
+    private void Start()
+    {
+           Activate();
+    }
+
 }
