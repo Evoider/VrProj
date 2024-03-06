@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class EventTrigger : MonoBehaviour
 {
-    [SerializeField] private ThrowObject _event;
+    [SerializeField] private ThrowEffect _event;
 
     private void OnTriggerEnter(Collider other)
     {
-        _event.Activate();
+        //_event.Activate();
     }
 }
