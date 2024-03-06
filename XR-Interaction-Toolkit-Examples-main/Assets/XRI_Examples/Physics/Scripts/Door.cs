@@ -124,7 +124,9 @@ namespace UnityEngine.XR.Content.Interaction
 
             if (!m_Closed || m_Locked)
                 return;
-
+            
+            
+            Debug.Log($"{handleValue} / {m_HandleOpenValue}");
             if (handleValue < m_HandleOpenValue)
             {
                 m_DoorJoint.limits = m_OpenDoorLimits;
