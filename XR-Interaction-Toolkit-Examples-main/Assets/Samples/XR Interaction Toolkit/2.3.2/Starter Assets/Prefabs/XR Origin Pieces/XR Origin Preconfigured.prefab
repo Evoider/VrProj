@@ -113,7 +113,7 @@ MonoBehaviour:
       m_Name: Is Tracked
       m_Type: 1
       m_ExpectedControlType: 
-      m_Id: 0953e318-78f1-40f9-8e53-5929a42bfed1
+      m_Id: 6d7f11d4-a7f2-4612-bc20-6ce4400747bb
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -209,7 +209,7 @@ MonoBehaviour:
       m_Name: UI Scroll
       m_Type: 0
       m_ExpectedControlType: Vector2
-      m_Id: 2d59c5f6-46cf-47f0-b275-1ef098c536fe
+      m_Id: c1b03984-48e9-4799-8145-f300c34c3e59
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -269,7 +269,7 @@ MonoBehaviour:
       m_Name: Scale Toggle
       m_Type: 1
       m_ExpectedControlType: 
-      m_Id: 4d45f358-42d5-4873-91a9-714fdda47e9b
+      m_Id: d7dc7f66-9a7e-4042-b4c9-d4c86dcf28da
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -281,7 +281,7 @@ MonoBehaviour:
       m_Name: Scale Delta
       m_Type: 0
       m_ExpectedControlType: Vector2
-      m_Id: 4be4762a-d5fc-4fd3-b825-79287f674c27
+      m_Id: 8745339c-a0d0-40e2-9271-094d66bf2e77
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -453,7 +453,7 @@ MonoBehaviour:
       m_Name: Is Tracked
       m_Type: 1
       m_ExpectedControlType: 
-      m_Id: ad79c523-d13a-4264-8711-8a05ba0aef23
+      m_Id: 8cfbc039-5202-45c2-b584-2f7f78d52515
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -549,7 +549,7 @@ MonoBehaviour:
       m_Name: UI Scroll
       m_Type: 0
       m_ExpectedControlType: Vector2
-      m_Id: cca1439b-1c27-40cb-8387-f7adc272fdb3
+      m_Id: 64b5fd15-6a9f-4ea0-8796-d1053d57b3c2
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -609,7 +609,7 @@ MonoBehaviour:
       m_Name: Scale Toggle
       m_Type: 1
       m_ExpectedControlType: 
-      m_Id: f66defbd-cc71-4bf8-b11d-b65b3ff7f21e
+      m_Id: 1116d2bb-b8e7-4dda-afb5-ca95d9ba0792
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -621,7 +621,7 @@ MonoBehaviour:
       m_Name: Scale Delta
       m_Type: 0
       m_ExpectedControlType: Vector2
-      m_Id: 428e0da9-f7b5-4597-9b5c-9084a1c73127
+      m_Id: 06a37d03-cf5c-4729-a9ad-c71b9001bbc3
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -1372,7 +1372,7 @@ MonoBehaviour:
       m_Name: Is Tracked
       m_Type: 1
       m_ExpectedControlType: 
-      m_Id: 470636db-3ce5-4239-a913-1ba0751a21ef
+      m_Id: f9752c9e-8da6-4957-805a-bcda22c89efb
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -1468,7 +1468,7 @@ MonoBehaviour:
       m_Name: UI Scroll
       m_Type: 0
       m_ExpectedControlType: Vector2
-      m_Id: 17599fa0-dd99-4e1a-a666-3ce8aeb1f714
+      m_Id: 32dc7b6d-0879-418b-b1ce-50433f912f59
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -1528,7 +1528,7 @@ MonoBehaviour:
       m_Name: Scale Toggle
       m_Type: 1
       m_ExpectedControlType: 
-      m_Id: 9f0c8b39-747b-4180-a4d0-0e4db71cf836
+      m_Id: ab660334-9ac9-499a-887c-658b23f92a12
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -1540,7 +1540,7 @@ MonoBehaviour:
       m_Name: Scale Delta
       m_Type: 0
       m_ExpectedControlType: Vector2
-      m_Id: 0542f276-0402-4f52-867f-169de1d6778b
+      m_Id: 2b5ac35e-0ace-4407-ad99-ec0c70ee2147
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -1772,7 +1772,7 @@ MonoBehaviour:
       m_Name: Is Tracked
       m_Type: 1
       m_ExpectedControlType: 
-      m_Id: 1f5cd02c-ee29-482e-a918-d5b495053d30
+      m_Id: a3a5e7ed-3347-4243-8b31-9317173ae2c2
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -1868,7 +1868,7 @@ MonoBehaviour:
       m_Name: UI Scroll
       m_Type: 0
       m_ExpectedControlType: Vector2
-      m_Id: 39517ed9-1aa7-4e60-8df9-d73baf38897a
+      m_Id: a96e8db2-92fd-4376-b993-7c80cb5e5acb
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -1928,7 +1928,7 @@ MonoBehaviour:
       m_Name: Scale Toggle
       m_Type: 1
       m_ExpectedControlType: 
-      m_Id: d2065c67-3a2d-4ee3-b485-efce83aa55c4
+      m_Id: 5f20b01e-29aa-429f-bf3f-5ed6c6660243
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -1940,7 +1940,7 @@ MonoBehaviour:
       m_Name: Scale Delta
       m_Type: 0
       m_ExpectedControlType: Vector2
-      m_Id: a5887f90-715e-43bb-9d60-460bc27c29a2
+      m_Id: a85b48de-54d8-4ade-8171-ad8221721ec6
       m_Processors: 
       m_Interactions: 
       m_SingletonActionBindings: []
@@ -2274,10 +2274,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7693184380767619946, guid: ad818c36731146e994540a1896ad8f24, type: 3}
-      propertyPath: m_Parameters.widthMultiplier
-      value: 0.01
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2354,10 +2350,6 @@ PrefabInstance:
     - target: {fileID: 5888765399538998960, guid: ad818c36731146e994540a1896ad8f24, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7693184380767619946, guid: ad818c36731146e994540a1896ad8f24, type: 3}
-      propertyPath: m_Parameters.widthMultiplier
-      value: 0.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

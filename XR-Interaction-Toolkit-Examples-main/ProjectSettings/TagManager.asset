@@ -9,11 +9,12 @@ TagManager:
   - Destroyer
   - MiniWorldCamera
   - Water
+  - LevitatingObject
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Debug
   - Water
   - UI
   - 
