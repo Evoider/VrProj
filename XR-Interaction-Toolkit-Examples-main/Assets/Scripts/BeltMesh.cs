@@ -10,6 +10,11 @@ public class TorusGenerator : MonoBehaviour
     public float minorRadius = 0.1f;
     public float edgeThickness = 0.1f;
 
+    private void OnValidate()
+    {
+        GenerateTorus();
+    }
+
     void Start()
     {
         GenerateTorus();
