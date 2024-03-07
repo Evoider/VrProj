@@ -54,7 +54,6 @@ public class LevitationEffect : MonoBehaviour
         _rb.useGravity = false;
         yield return new WaitForSeconds(2);
         _startPos = transform.position;
-        Debug.Log("levitate true");
         _levitate = true;
 
 

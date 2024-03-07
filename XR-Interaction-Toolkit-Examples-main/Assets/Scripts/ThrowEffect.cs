@@ -26,8 +26,6 @@ public class ThrowEffect : MonoBehaviour
     {
         _rb.AddForce(Random.insideUnitSphere * 10f, ForceMode.Impulse);
         ThrowTrigger.OnThrow -= ThrowTrigger_OnThrow;
-        Debug.Log("throw true");
-
     }
 
 }

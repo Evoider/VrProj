@@ -11,7 +11,6 @@ public class ThrowTrigger : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag != _player) return;
-        Debug.Log("on throw");
         OnThrow?.Invoke();
     }
 }

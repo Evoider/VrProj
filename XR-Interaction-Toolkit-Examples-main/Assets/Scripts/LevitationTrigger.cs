@@ -7,7 +7,6 @@ public class LevitationTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("on levitate");
         OnLevitated?.Invoke();
     }
 }
