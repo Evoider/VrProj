@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.ShaderGraph.Drawing;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
@@ -11,6 +12,8 @@ public class VolumeSettings : MonoBehaviour
     [SerializeField] private Slider masterSlider;
     [SerializeField] private Slider musicSlider;
     [SerializeField] private Slider SFXSlider;
+    [SerializeField] private Toggle comfortMode;
+    [SerializeField] private Toggle snapRot;
 
     private void Start()
     {
@@ -18,11 +21,17 @@ public class VolumeSettings : MonoBehaviour
         {
             LoadVolume();
         }
+        if (PlayerPrefs.HasKey("comfortMode"))
+        {
+            LoadSettings();
+        }
         else 
         {
             SetMasterVolume();
             SetMusicVolume();
             SetSFXVolume();
+            SetComfortMode();
+            SetSnapRot();
         }
     }
 
@@ -47,6 +56,19 @@ public class VolumeSettings : MonoBehaviour
         PlayerPrefs.SetFloat("SFXVolume", volume);
     }
 
+    public void SetComfortMode()
+    {
+        bool checkCase = comfortMode.isOn;
+        PlayerPrefs.SetInt("comfortMode", checkCase ? 1 : 0);
+    }
+
+    public void SetSnapRot()
+    {
+        bool checkCase = snapRot.isOn;
+        PlayerPrefs.SetInt("snapRot", checkCase ? 1 : 0);
+
+    }
+
     private void LoadVolume()
     {
         masterSlider.value = PlayerPrefs.GetFloat("masterVolume");
@@ -54,5 +76,28 @@ public class VolumeSettings : MonoBehaviour
         SFXSlider.value = PlayerPrefs.GetFloat("SFXVolume");
 
         SetMasterVolume();
+    }
+
+    private void LoadSettings()
+    {
+        if (PlayerPrefs.GetInt("snapRot") == 1)
+        {
+            snapRot.isOn = true;
+        }
+        else
+        {
+            snapRot.isOn = false;
+        }
+        if (PlayerPrefs.GetInt("comfortMode") == 1)
+        {
+            comfortMode.isOn = true;
+        }
+        else
+        {
+            comfortMode.isOn = false;
+        }
+
+        SetSnapRot();
+        SetComfortMode();
     }
 }
