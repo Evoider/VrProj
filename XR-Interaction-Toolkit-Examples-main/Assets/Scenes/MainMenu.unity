@@ -802,6 +802,11 @@ Transform:
   - {fileID: 2108106816}
   m_Father: {fileID: 1184592173}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &338115757 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8059801596075752100, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
+  m_PrefabInstance: {fileID: 2083788039}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &373735587
 GameObject:
   m_ObjectHideFlags: 0
@@ -1380,7 +1385,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 29304935546587040, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
   m_PrefabInstance: {fileID: 2083788039}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 338115757}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa74d384629b02340bc59709603b0771, type: 3}
@@ -5007,10 +5012,10 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 799890861}
+      - m_Target: {fileID: 338115757}
         m_TargetAssemblyTypeName: UnityEngine.XR.Content.Interaction.LocomotionManager,
           Unity.XR.Content.Interaction
-        m_MethodName: m_LeftHandTurnStyle
+        m_MethodName: 
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
