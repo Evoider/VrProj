@@ -78,7 +78,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 0}
-  m_Colliders: []
+  m_Colliders:
+  - {fileID: 4005449359308101403}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 1
@@ -230,6 +231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Keys:
+  - {fileID: 11400000, guid: 589da3fb6ac42be4daa6b741893be3cc, type: 2}
   - {fileID: 11400000, guid: 3e433f91841e5d14ba4db9710832675a, type: 2}
 --- !u!1 &2100814271924408430
 GameObject:
@@ -525,7 +527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1410cbaaadf84a7aaa6459d37ad21b3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Renderer: {fileID: 0}
+  m_Renderer: {fileID: 2985656945601772078}
   m_MaterialIndex: 0
 --- !u!114 &8139024779622928162
 MonoBehaviour:
@@ -755,6 +757,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad10e4113786ee546b5e5563829d2b45, type: 3}
+--- !u!23 &2985656945601772078 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: ad10e4113786ee546b5e5563829d2b45, type: 3}
+  m_PrefabInstance: {fileID: 4516752593424737962}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4117420292741693761 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ad10e4113786ee546b5e5563829d2b45, type: 3}
