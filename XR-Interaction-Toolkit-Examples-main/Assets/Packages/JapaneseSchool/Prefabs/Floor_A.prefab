@@ -214,7 +214,7 @@ MonoBehaviour:
   m_MatchOrientation: 0
   m_MatchDirectionalInput: 0
   m_TeleportTrigger: 0
-  m_FilterSelectionByHitNormal: 0
+  m_FilterSelectionByHitNormal: 1
   m_UpNormalToleranceDegrees: 30
   m_Teleporting:
     m_PersistentCalls:
