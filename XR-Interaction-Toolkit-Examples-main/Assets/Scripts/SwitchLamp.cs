@@ -1,6 +1,8 @@
 ﻿using System;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Audio;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class SwitchLamp : MonoBehaviour
 {
@@ -13,6 +15,8 @@ public class SwitchLamp : MonoBehaviour
     private string[] _kanjiList;
     private bool _canSwitch = true;
     private bool _isSolved = false;
+
+    public AudioSource _player;
 
     // TODO -> activate input
 
@@ -46,6 +50,9 @@ public class SwitchLamp : MonoBehaviour
         }
 
         OnSwitch?.Invoke(_id, isOn);
+
+        _player.Play();
+        
     }
 
     private void GameManager_OnLampsReset()
