@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
     public static event Action OnLampsReset;
     public static event Action OnLampsSolved;
     private bool[] _lamps;
+    public AudioSource _successSound;
 
     private void Awake()
     {
@@ -65,6 +66,6 @@ public class GameManager : MonoBehaviour
 
     private void PuzzleComplete()
     {
-        // TODO -> drop key, sound
+        _successSound.Play();
     }
 }
