@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 23826652011216508}
   - component: {fileID: 95885960485144154}
   - component: {fileID: 2422057607605542075}
+  - component: {fileID: 1595795112893291992}
   m_Layer: 0
   m_Name: Globe
   m_TagString: Untagged
@@ -133,3 +134,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!64 &1595795112893291992
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002080106766192}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 4b55f9e77a7e2b64c90fa45a0543815a, type: 3}
