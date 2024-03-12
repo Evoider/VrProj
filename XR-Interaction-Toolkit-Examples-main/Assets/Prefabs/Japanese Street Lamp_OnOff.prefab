@@ -1192,7 +1192,7 @@ MonoBehaviour:
   - {fileID: 787906690880787751}
   _id: 0
   _kanji: {fileID: 8892630776634115429}
-  _player: {fileID: 0}
+  _player: {fileID: 7138418466292357198}
 --- !u!114 &2929924182887515744
 MonoBehaviour:
   m_ObjectHideFlags: 0
