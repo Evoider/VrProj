@@ -1,12 +1,19 @@
 using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class GameManager : MonoBehaviour
 {
     public static event Action OnLampsReset;
     public static event Action OnLampsSolved;
+
+    [SerializeField] private KeySpawner _lampsKeySpawner;
+
     private bool[] _lamps;
+    public AudioSource _player;
+    public AudioClip _successSound;
+    public AudioMixer _mixer;
 
     private void Awake()
     {
@@ -65,6 +72,9 @@ public class GameManager : MonoBehaviour
 
     private void PuzzleComplete()
     {
-        // TODO -> drop key, sound
+        _lampsKeySpawner.Spawn();
+        _mixer.outputAudioMixerGroup = _mixer.FindMatchingGroups("SFX")[0];
+        _player.PlayOneShot(_successSound);
+
     }
 }
