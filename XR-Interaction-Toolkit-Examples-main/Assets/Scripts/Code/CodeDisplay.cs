@@ -1,24 +1,17 @@
+using System.Text;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class CodeDisplay : MonoBehaviour
 {
     [SerializeField] private TMP_Text codeText;
     private string code = "____"; 
 
-    public void AddCodeDigit(int digit)
+    public void AddCodeDigit(char digit, int index)
     {
-        int index = code.IndexOf('_');
-        if (index >= 0)
-        {
-            code = code.Remove(index, 1).Insert(index, digit.ToString());
-            UpdateCodeDisplay();
-        }
-    }
-
-    void UpdateCodeDisplay()
-    {
+        StringBuilder newCode = new(code);
+        newCode[index] = digit;
+        code = newCode.ToString();
         codeText.text = code;
     }
 }
