@@ -50,7 +50,7 @@ public class GameManager : MonoBehaviour
 
         for (int i = 0; i < id; i++)
         {
-            Debug.Log(_lamps[i]);
+            //Debug.Log(_lamps[i]);
             if (!_lamps[i])
             {
                 OnLampsReset?.Invoke();
