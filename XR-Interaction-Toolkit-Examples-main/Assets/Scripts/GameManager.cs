@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public static event Action OnLampsSolved;
 
     [SerializeField] private KeySpawner _lampsKeySpawner;
+    [SerializeField] private KeySpawner _notesKeySpawner;
 
     private bool[] _lamps;
     public AudioSource _player;
@@ -58,7 +59,7 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(.5f);
 
         if (id == 4)
         {
