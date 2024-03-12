@@ -100,8 +100,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numSegments: 32
   numSides: 16
-  majorRadius: 0.5
-  minorRadius: 0.04
+  majorRadius: 0.3
+  minorRadius: 0.02
   edgeThickness: 0.1
 --- !u!1001 &222025119568143631
 PrefabInstance:
