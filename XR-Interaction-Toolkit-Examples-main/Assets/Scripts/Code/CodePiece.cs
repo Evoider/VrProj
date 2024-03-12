@@ -1,30 +1,16 @@
+using System;
+using TMPro;
 using UnityEngine;
 
 public class CodePiece : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            AddToCodeDisplay();
-            Destroy(gameObject);
-        }
-    }
+    [SerializeField] private CodeDisplay _codeDisplay;
+    [SerializeField] private TMP_Text _text;
 
-    void AddToCodeDisplay()
+    public void AddToCodeDisplay()
     {
-        string digitText = GetComponentInChildren<TextMesh>().text;
-        if (!string.IsNullOrEmpty(digitText))
-        {
-            int digit;
-            if (int.TryParse(digitText, out digit))
-            {
-                CodeDisplay codeDisplay = FindObjectOfType<CodeDisplay>();
-                if (codeDisplay != null)
-                {
-                    codeDisplay.AddCodeDigit(digit);
-                }
-            }
-        }
+        _codeDisplay.AddCodeDigit(int.Parse(_text.text));
+        Destroy(gameObject);
+
     }
 }
