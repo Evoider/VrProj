@@ -388,6 +388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animation: {fileID: 2811709772661579424}
+  _clip: {fileID: 0}
 --- !u!225 &7363555768130170179
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -396,7 +397,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6301893896242942275}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -409,8 +410,9 @@ Animation:
   m_GameObject: {fileID: 6301893896242942275}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: a26121163fd50e34b99b755c2624ed80, type: 2}
+  m_Animation: {fileID: 0}
   m_Animations:
+  - {fileID: 7400000, guid: b96340f14857399478d8fceae2eda1be, type: 2}
   - {fileID: 7400000, guid: a26121163fd50e34b99b755c2624ed80, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 0
