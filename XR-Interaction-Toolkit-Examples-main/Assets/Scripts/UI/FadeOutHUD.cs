@@ -8,6 +8,16 @@ public class FadeOutHUD : MonoBehaviour
 
     private void Awake()
     {
+        FadeInHUD.OnActivate += FadeInHUD_OnActivate;
+    }
+
+    private void OnDestroy()
+    {
+        FadeInHUD.OnActivate -= FadeInHUD_OnActivate;
+    }
+
+    private void FadeInHUD_OnActivate()
+    {
         StartCoroutine(FadeOut());
     }
 

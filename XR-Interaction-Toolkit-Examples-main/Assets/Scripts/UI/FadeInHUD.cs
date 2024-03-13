@@ -1,7 +1,10 @@
+using System;
 using UnityEngine;
 
 public class FadeInHUD : MonoBehaviour
 {
+    public static event Action OnActivate;
+
     [SerializeField] private Animation _animation;
     [SerializeField] private AnimationClip _clip;
 
@@ -18,5 +21,6 @@ public class FadeInHUD : MonoBehaviour
     private void GrabCamera_OnCameraGrab()
     {
         _animation.Play(_clip.name);
+        OnActivate?.Invoke();
     }
 }
