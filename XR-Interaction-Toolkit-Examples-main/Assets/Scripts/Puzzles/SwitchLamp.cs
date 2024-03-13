@@ -1,8 +1,6 @@
-﻿using System;
-using TMPro;
+﻿using HarmonyLib;
+using System;
 using UnityEngine;
-using UnityEngine.Audio;
-using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class SwitchLamp : MonoBehaviour
 {
@@ -10,22 +8,21 @@ public class SwitchLamp : MonoBehaviour
 
     [SerializeField] Light[] _lights;
     [SerializeField] int _id;
-    [SerializeField] TMP_Text _kanji;
 
-    private string[] _kanjiList;
+    [SerializeField] private GameObject _cluePrefab;
+
     private bool _canSwitch = true;
     private bool _isSolved = false;
 
     public AudioSource _player;
 
-    // TODO -> activate input
-
     private void Awake()
     {
-        _kanjiList = new string[5] { "月", "火", "水", "木", "金" };
-        _kanji.text = _kanjiList[_id];
-
         GameManager.OnLampsSolved += GameManager_OnLampsSolved;
+
+        GameObject go = Instantiate(_cluePrefab, transform.position, Quaternion.identity, transform);
+        go.GetComponent<SwitchLamp_SetKanji>().SetKanjiId(_id);
+        _lights.AddRangeToArray(go.GetComponents<Light>());
     }
 
     private void OnDestroy()
@@ -52,7 +49,6 @@ public class SwitchLamp : MonoBehaviour
         OnSwitch?.Invoke(_id, isOn);
 
         _player.Play();
-        
     }
 
     private void GameManager_OnLampsReset()

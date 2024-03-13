@@ -396,6 +396,103 @@ PlayerSettings:
       m_Height: 36
       m_Kind: 1
       m_SubKind: 
+  - m_BuildTarget: iPhone
+    m_Icons:
+    - m_Textures: []
+      m_Width: 180
+      m_Height: 180
+      m_Kind: 0
+      m_SubKind: iPhone
+    - m_Textures: []
+      m_Width: 120
+      m_Height: 120
+      m_Kind: 0
+      m_SubKind: iPhone
+    - m_Textures: []
+      m_Width: 167
+      m_Height: 167
+      m_Kind: 0
+      m_SubKind: iPad
+    - m_Textures: []
+      m_Width: 152
+      m_Height: 152
+      m_Kind: 0
+      m_SubKind: iPad
+    - m_Textures: []
+      m_Width: 76
+      m_Height: 76
+      m_Kind: 0
+      m_SubKind: iPad
+    - m_Textures: []
+      m_Width: 120
+      m_Height: 120
+      m_Kind: 3
+      m_SubKind: iPhone
+    - m_Textures: []
+      m_Width: 80
+      m_Height: 80
+      m_Kind: 3
+      m_SubKind: iPhone
+    - m_Textures: []
+      m_Width: 80
+      m_Height: 80
+      m_Kind: 3
+      m_SubKind: iPad
+    - m_Textures: []
+      m_Width: 40
+      m_Height: 40
+      m_Kind: 3
+      m_SubKind: iPad
+    - m_Textures: []
+      m_Width: 87
+      m_Height: 87
+      m_Kind: 1
+      m_SubKind: iPhone
+    - m_Textures: []
+      m_Width: 58
+      m_Height: 58
+      m_Kind: 1
+      m_SubKind: iPhone
+    - m_Textures: []
+      m_Width: 29
+      m_Height: 29
+      m_Kind: 1
+      m_SubKind: iPhone
+    - m_Textures: []
+      m_Width: 58
+      m_Height: 58
+      m_Kind: 1
+      m_SubKind: iPad
+    - m_Textures: []
+      m_Width: 29
+      m_Height: 29
+      m_Kind: 1
+      m_SubKind: iPad
+    - m_Textures: []
+      m_Width: 60
+      m_Height: 60
+      m_Kind: 2
+      m_SubKind: iPhone
+    - m_Textures: []
+      m_Width: 40
+      m_Height: 40
+      m_Kind: 2
+      m_SubKind: iPhone
+    - m_Textures: []
+      m_Width: 40
+      m_Height: 40
+      m_Kind: 2
+      m_SubKind: iPad
+    - m_Textures: []
+      m_Width: 20
+      m_Height: 20
+      m_Kind: 2
+      m_SubKind: iPad
+    - m_Textures: []
+      m_Width: 1024
+      m_Height: 1024
+      m_Kind: 4
+      m_SubKind: App Store
   m_BuildTargetBatching:
   - m_BuildTarget: Standalone
     m_StaticBatching: 1
@@ -760,23 +857,23 @@ PlayerSettings:
     30: UNITY_POST_PROCESSING_STACK_V2
     4: UNITY_POST_PROCESSING_STACK_V2
     7: UNITY_POST_PROCESSING_STACK_V2;USE_INPUT_SYSTEM_POSE_CONTROL
-    Android: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
-    EmbeddedLinux: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
+    Android: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;UNITY_POST_PROCESSING_STACK_V2
+    EmbeddedLinux: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;UNITY_POST_PROCESSING_STACK_V2
     GameCoreScarlett: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
-    GameCoreXboxOne: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
+    GameCoreXboxOne: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;UNITY_POST_PROCESSING_STACK_V2
     LinuxHeadlessSimulation: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
-    Nintendo Switch: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
-    PS4: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
-    PS5: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
-    QNX: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
-    Stadia: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
-    Standalone: UEE;ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
-    VisionOS: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
-    WebGL: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
+    Nintendo Switch: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;UNITY_POST_PROCESSING_STACK_V2
+    PS4: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;UNITY_POST_PROCESSING_STACK_V2
+    PS5: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;UNITY_POST_PROCESSING_STACK_V2
+    QNX: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;UNITY_POST_PROCESSING_STACK_V2
+    Stadia: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;UNITY_POST_PROCESSING_STACK_V2
+    Standalone: UEE;ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;UNITY_POST_PROCESSING_STACK_V2
+    VisionOS: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;UNITY_POST_PROCESSING_STACK_V2
+    WebGL: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;UNITY_POST_PROCESSING_STACK_V2
     Windows Store Apps: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
-    XboxOne: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
+    XboxOne: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;UNITY_POST_PROCESSING_STACK_V2
     iPhone: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
-    tvOS: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK
+    tvOS: ULTIMATEXR_USE_WINDOWSMIXEDREALITY_SDK;UNITY_POST_PROCESSING_STACK_V2
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:

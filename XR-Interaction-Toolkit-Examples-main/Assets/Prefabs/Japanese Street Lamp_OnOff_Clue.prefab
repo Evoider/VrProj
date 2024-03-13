@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6413873074514040834
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 395469334233133168, guid: 3f9f61450fc65c54490b991a133b66e0, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 462923542993077165, guid: 3f9f61450fc65c54490b991a133b66e0, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 583117643401512704, guid: 3f9f61450fc65c54490b991a133b66e0, type: 3}
+      propertyPath: _cluePrefab
+      value: 
+      objectReference: {fileID: 3001756329616001423}
+    - target: {fileID: 2540815643283437034, guid: 3f9f61450fc65c54490b991a133b66e0, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2929924182887515744, guid: 3f9f61450fc65c54490b991a133b66e0, type: 3}
+      propertyPath: m_Colliders.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2929924182887515744, guid: 3f9f61450fc65c54490b991a133b66e0, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2929924182887515744, guid: 3f9f61450fc65c54490b991a133b66e0, type: 3}
+      propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Switch
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664364836104477450, guid: 3f9f61450fc65c54490b991a133b66e0, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664364836104477450, guid: 3f9f61450fc65c54490b991a133b66e0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530374094493149759, guid: 3f9f61450fc65c54490b991a133b66e0, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5223342990722519178, guid: 3f9f61450fc65c54490b991a133b66e0, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5713682243517367247, guid: 3f9f61450fc65c54490b991a133b66e0, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5751918588222876224, guid: 3f9f61450fc65c54490b991a133b66e0, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8092869869420097055, guid: 3f9f61450fc65c54490b991a133b66e0, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117596019495989585, guid: 3f9f61450fc65c54490b991a133b66e0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117596019495989585, guid: 3f9f61450fc65c54490b991a133b66e0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117596019495989585, guid: 3f9f61450fc65c54490b991a133b66e0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117596019495989585, guid: 3f9f61450fc65c54490b991a133b66e0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117596019495989585, guid: 3f9f61450fc65c54490b991a133b66e0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117596019495989585, guid: 3f9f61450fc65c54490b991a133b66e0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117596019495989585, guid: 3f9f61450fc65c54490b991a133b66e0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117596019495989585, guid: 3f9f61450fc65c54490b991a133b66e0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117596019495989585, guid: 3f9f61450fc65c54490b991a133b66e0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117596019495989585, guid: 3f9f61450fc65c54490b991a133b66e0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8118520004092154253, guid: 3f9f61450fc65c54490b991a133b66e0, type: 3}
+      propertyPath: m_Name
+      value: Japanese Street Lamp_OnOff_Clue
+      objectReference: {fileID: 0}
+    - target: {fileID: 8118520004092154253, guid: 3f9f61450fc65c54490b991a133b66e0, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8140534555000061801, guid: 3f9f61450fc65c54490b991a133b66e0, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 539d550d36b969a40bea495c57d3a705, type: 2}
+    - target: {fileID: 8700613844241751707, guid: 3f9f61450fc65c54490b991a133b66e0, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 0}
+    - {fileID: 583117643401512704, guid: 3f9f61450fc65c54490b991a133b66e0, type: 3}
+    - {fileID: 8092869869420097055, guid: 3f9f61450fc65c54490b991a133b66e0, type: 3}
+    - {fileID: 1459024327776190275, guid: 3f9f61450fc65c54490b991a133b66e0, type: 3}
+    - {fileID: 2929924182887515744, guid: 3f9f61450fc65c54490b991a133b66e0, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3f9f61450fc65c54490b991a133b66e0, type: 3}
+--- !u!1 &3001756329616001423 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8118520004092154253, guid: 3f9f61450fc65c54490b991a133b66e0, type: 3}
+  m_PrefabInstance: {fileID: 6413873074514040834}
+  m_PrefabAsset: {fileID: 0}

@@ -37,6 +37,7 @@ public class Keypad : MonoBehaviour
     [SerializeField] private TMP_Text keypadDisplayText;
     [SerializeField] private AudioSource audioSource;
 
+    public int KeypadCombo => keypadCombo;
 
     private string currentInput;
     private bool displayingResult = false;
