@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 8745450244300434347}
   - component: {fileID: 7343458709478787076}
   - component: {fileID: 8127291807023423831}
-  m_Layer: 0
+  - component: {fileID: 8996644886884848960}
+  m_Layer: 9
   m_Name: LockerUnlockable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,6 +109,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: f8a4903bf11aefb4f8358b11034c57cc, type: 3}
+--- !u!114 &8996644886884848960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559590535149245155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0115fe2c4c6232842ad7b334667bbadd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _variantPrefab: {fileID: 4111401206391817539, guid: 83f43b431b2360f48a1aaf1cc06503d6, type: 3}
 --- !u!1 &657323375114956102
 GameObject:
   m_ObjectHideFlags: 0
@@ -117,7 +131,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4754197868911863618}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CrowbarAttach
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,7 +166,7 @@ GameObject:
   - component: {fileID: 5271880499127850545}
   - component: {fileID: 5930169894388677605}
   - component: {fileID: 9092826398622139910}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Lock Socket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -291,7 +305,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3731150209679183824}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AttachPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -326,7 +340,7 @@ GameObject:
   - component: {fileID: 3255577034942554220}
   - component: {fileID: 4130710966879191018}
   - component: {fileID: 8558640346436796536}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
