@@ -7,6 +7,7 @@ public class GrabCamera : MonoBehaviour
 
     public void Grab()
     {
+        Debug.Log("grab camera");
         OnCameraGrab?.Invoke();
     }
 }
