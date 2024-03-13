@@ -1209,8 +1209,9 @@ MonoBehaviour:
   - {fileID: 243792145936562539}
   - {fileID: 6985156689309676565}
   - {fileID: 787906690880787751}
-  _id: 0
+  _kanji: {fileID: 1620053724360236563}
   _cluePrefab: {fileID: 3001756329616001423, guid: deee1222d9cacdf498255ec721b8180f, type: 3}
+  _id: 0
   _player: {fileID: 7138418466292357198}
 --- !u!114 &2929924182887515744
 MonoBehaviour:
@@ -1338,5 +1339,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e812249a2c475a49a9e33bae6b5920d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _id: 0
   _kanji: {fileID: 8892630776634115429}

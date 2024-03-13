@@ -19,6 +19,6 @@ public class SpawnVariant : MonoBehaviour
 
     private void OnDestroy()
     {
-        Destroy(_variant);
+        //Destroy(_variant);
     }
 }

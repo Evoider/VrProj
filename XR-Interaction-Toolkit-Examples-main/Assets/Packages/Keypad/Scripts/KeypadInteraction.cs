@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -7,13 +5,11 @@ using UnityEngine.XR.Interaction.Toolkit;
 namespace NavKeypad { 
 public class KeypadInteraction : MonoBehaviour
 {
-
     [SerializeField] private XRRayInteractor LeftRayInteractor;
     [SerializeField] private XRRayInteractor RightRayInteractor;
     [SerializeField] private InputActionReference LeftInputActionReference;
     [SerializeField] private InputActionReference RightInputActionReference;
 
-    
     private void Update()
     {
         ClickOnButton(LeftRayInteractor, LeftInputActionReference);
