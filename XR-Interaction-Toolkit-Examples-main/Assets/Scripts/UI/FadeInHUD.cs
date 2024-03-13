@@ -20,6 +20,7 @@ public class FadeInHUD : MonoBehaviour
 
     private void GrabCamera_OnCameraGrab()
     {
+        GrabCamera.OnCameraGrab -= GrabCamera_OnCameraGrab;
         _animation.Play(_clip.name);
         OnActivate?.Invoke();
     }
