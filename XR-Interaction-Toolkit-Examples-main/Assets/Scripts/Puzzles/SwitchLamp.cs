@@ -6,19 +6,24 @@ public class SwitchLamp : MonoBehaviour
 {
     public static event Action<int, bool> OnSwitch;
 
+    [Header("Dependencies")]
     [SerializeField] Light[] _lights;
+    [SerializeField] private SwitchLamp_SetKanji _kanji;
+    [SerializeField] private GameObject _cluePrefab;
+
+    [Header("Puzzle Setting")]
     [SerializeField] int _id;
 
-    [SerializeField] private GameObject _cluePrefab;
+    [Header("Audio")]
+    [SerializeField] private AudioSource _player;
 
     private bool _canSwitch = true;
     private bool _isSolved = false;
 
-    public AudioSource _player;
-
     private void Awake()
     {
         GameManager.OnLampsSolved += GameManager_OnLampsSolved;
+        _kanji.SetKanjiId(_id);
 
         GameObject go = Instantiate(_cluePrefab, transform.position, Quaternion.identity, transform);
         go.GetComponent<SwitchLamp_SetKanji>().SetKanjiId(_id);

@@ -3,15 +3,14 @@ using UnityEngine;
 
 public class SwitchLamp_SetKanji : MonoBehaviour
 {
-    [SerializeField] int _id;
     [SerializeField] TMP_Text _kanji;
 
     private string[] _kanjiList;
+    private int _id;
 
     private void Awake()
     {
         _kanjiList = new string[5] { "月", "火", "水", "木", "金" };
-        SetKanji();
     }
 
     public void SetKanjiId(int id)
