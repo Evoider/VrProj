@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5892004236940549557}
   - component: {fileID: 505655145805534989}
   - component: {fileID: 4304772063842668264}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Point Light_Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,7 +46,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 0.96060294, b: 0.7971698, a: 1}
   m_Intensity: 1
-  m_Range: 100
+  m_Range: 1000
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -129,7 +129,7 @@ GameObject:
   - component: {fileID: 8548594002682081649}
   - component: {fileID: 1836804668697220468}
   - component: {fileID: 2602012155364025423}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -263,7 +263,7 @@ GameObject:
   - component: {fileID: 254773108111184227}
   - component: {fileID: 787906690880787751}
   - component: {fileID: 3517214398942902703}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Point Light_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -384,7 +384,7 @@ GameObject:
   - component: {fileID: 9039224003965240217}
   - component: {fileID: 7686618493992280794}
   - component: {fileID: 3085696492702047086}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ActivateHUD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -519,7 +519,7 @@ GameObject:
   - component: {fileID: 4537348669791456969}
   - component: {fileID: 243792145936562539}
   - component: {fileID: 4672076370647541473}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Point Light_Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -637,7 +637,7 @@ GameObject:
   - component: {fileID: 5834117608294323582}
   - component: {fileID: 4915423928528211593}
   - component: {fileID: 8892630776634115429}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Kanji
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -771,7 +771,7 @@ GameObject:
   - component: {fileID: 6425863391468935536}
   - component: {fileID: 6985156689309676565}
   - component: {fileID: 5558826911177851282}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Point Light_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -878,6 +878,134 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!1 &5751918588222876224
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9015178703675686118}
+  - component: {fileID: 7138418466292357198}
+  m_Layer: 9
+  m_Name: Audio Source
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9015178703675686118
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5751918588222876224}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.16313934, y: 1.5002275, z: 0.07837784}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8117596019495989585}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &7138418466292357198
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5751918588222876224}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 2341319393203529379, guid: 6843fa50c16085f4998b85bd630a6d59, type: 2}
+  m_audioClip: {fileID: 8300000, guid: af3970f1dd18f184e833d9b93dac12fa, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &8700613844241751707
 GameObject:
   m_ObjectHideFlags: 0
@@ -889,7 +1017,7 @@ GameObject:
   - component: {fileID: 4985839284654729753}
   - component: {fileID: 170371407683675945}
   - component: {fileID: 5043440643678783324}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: KanjiHUD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -963,6 +1091,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Japanese Street Lamp_OnOff
       objectReference: {fileID: 0}
+    - target: {fileID: 1000012828375150, guid: d3a86a245c874f341815b25579c74e3e, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012910057650, guid: d3a86a245c874f341815b25579c74e3e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1003,9 +1135,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 23000011849930378, guid: d3a86a245c874f341815b25579c74e3e, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23000011849930378, guid: d3a86a245c874f341815b25579c74e3e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e5af91a0d6d8fe6429dba549fff6e497, type: 2}
+    - target: {fileID: 23000011849930378, guid: d3a86a245c874f341815b25579c74e3e, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: e5af91a0d6d8fe6429dba549fff6e497, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 4000012910057650, guid: d3a86a245c874f341815b25579c74e3e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9015178703675686118}
     - targetCorrespondingSourceObject: {fileID: 4000012910057650, guid: d3a86a245c874f341815b25579c74e3e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5892004236940549557}
@@ -1031,6 +1178,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1000012828375150, guid: d3a86a245c874f341815b25579c74e3e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2929924182887515744}
+    - targetCorrespondingSourceObject: {fileID: 1000012828375150, guid: d3a86a245c874f341815b25579c74e3e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1620053724360236563}
   m_SourcePrefab: {fileID: 100100000, guid: d3a86a245c874f341815b25579c74e3e, type: 3}
 --- !u!4 &8117596019495989585 stripped
 Transform:
@@ -1060,7 +1210,8 @@ MonoBehaviour:
   - {fileID: 6985156689309676565}
   - {fileID: 787906690880787751}
   _id: 0
-  _kanji: {fileID: 8892630776634115429}
+  _cluePrefab: {fileID: 3001756329616001423, guid: deee1222d9cacdf498255ec721b8180f, type: 3}
+  _player: {fileID: 7138418466292357198}
 --- !u!114 &2929924182887515744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1175,3 +1326,17 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1620053724360236563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8118520004092154253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e812249a2c475a49a9e33bae6b5920d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _id: 0
+  _kanji: {fileID: 8892630776634115429}
