@@ -1,5 +1,5 @@
-﻿using HarmonyLib;
-using System;
+﻿using System;
+using System.Linq;
 using UnityEngine;
 
 public class SwitchLamp : MonoBehaviour
@@ -27,7 +27,8 @@ public class SwitchLamp : MonoBehaviour
 
         GameObject go = Instantiate(_cluePrefab, transform.position, Quaternion.identity, transform);
         go.GetComponent<SwitchLamp_SetKanji>().SetKanjiId(_id);
-        _lights.AddRangeToArray(go.GetComponents<Light>());
+
+        //foreach (var light in go.GetComponents<Light>()) _lights.Append(light);
     }
 
     private void OnDestroy()
