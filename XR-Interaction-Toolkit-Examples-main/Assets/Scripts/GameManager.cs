@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private CodePiece[] _notes;
 
     [Header("Music & Sounds")]
-    [SerializeField] private AudioSource _player;
+    [SerializeField] private AudioSource _puzzleSolved;
 
     private bool[] _lamps;
 
@@ -94,6 +94,6 @@ public class GameManager : MonoBehaviour
     private void PuzzleComplete(KeySpawner ks)
     {
         ks.Spawn();
-        _player.Play();
+        _puzzleSolved.Play();
     }
 }
