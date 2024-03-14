@@ -192,7 +192,7 @@ Transform:
   m_GameObject: {fileID: 2473409432950963391}
   serializedVersion: 2
   m_LocalRotation: {x: -0.24283631, y: 0, z: 0, w: 0.97006726}
-  m_LocalPosition: {x: -0.00000008344651, y: -0.016800042, z: -0.00080003036}
+  m_LocalPosition: {x: 0, y: -0.016800042, z: -0.00080003036}
   m_LocalScale: {x: 0.49999994, y: 0.533857, z: 0.45922652}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -209,7 +209,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 2341319393203529379, guid: 6843fa50c16085f4998b85bd630a6d59, type: 2}
   m_audioClip: {fileID: 8300000, guid: 5f1a26f5fe0919142b6a4035d029d2bd, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -360,10 +360,10 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4306503987809214854}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 7115092884022427566}
+        m_TargetAssemblyTypeName: UnlockPadlock, Assembly-CSharp
+        m_MethodName: Unlock
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -372,10 +372,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 7115092884022427566}
-        m_TargetAssemblyTypeName: UnlockPadlock, Assembly-CSharp
-        m_MethodName: Unlock
-        m_Mode: 0
+      - m_Target: {fileID: 4306503987809214854}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -545,13 +545,13 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children:
+  - {fileID: 6191479978143994640}
   - {fileID: 1694997322206966447}
   - {fileID: 8557914562269888834}
   - {fileID: 5405035608154631755}
   - {fileID: 6765595558221920076}
   - {fileID: 5744325275290584864}
   - {fileID: 7311090770794121567}
-  - {fileID: 6191479978143994640}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &515606867105592473
