@@ -657,6 +657,7 @@ GameObject:
   - component: {fileID: 2303921294396319334}
   - component: {fileID: 2303921294396319332}
   - component: {fileID: 6662462739219054338}
+  - component: {fileID: 2844975137579113024}
   m_Layer: 0
   m_Name: Keypad
   m_TagString: Untagged
@@ -694,7 +695,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onAccessGranted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2844975137579113024}
+        m_TargetAssemblyTypeName: UnlockDoor, Assembly-CSharp
+        m_MethodName: Unlock
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onAccessDenied:
     m_PersistentCalls:
       m_Calls: []
@@ -824,6 +837,19 @@ MonoBehaviour:
   RightRayInteractor: {fileID: 0}
   LeftInputActionReference: {fileID: -5982496924579745919, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   RightInputActionReference: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+--- !u!114 &2844975137579113024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2303921294396319335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9663b477a047924b9cd312d87a9ed18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _doorToUnlock: {fileID: 0}
 --- !u!1 &2742457487408926263
 GameObject:
   m_ObjectHideFlags: 0
