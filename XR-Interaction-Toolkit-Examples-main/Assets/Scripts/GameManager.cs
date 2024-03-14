@@ -2,7 +2,7 @@ using NavKeypad;
 using System;
 using System.Collections;
 using UnityEngine;
-using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -21,17 +21,23 @@ public class GameManager : MonoBehaviour
     [SerializeField] private AudioSource _player;
 
     private bool[] _lamps;
+    private int _unlockedPadlocks;
 
     private void Awake()
     {
+        UnlockPadlock.OnUnlock += UnlockPadlock_OnUnlock;
+        _keypad.OnAccessGranted.AddListener(() => PuzzleComplete(_notesKeySpawner));
+
+        _unlockedPadlocks = 0;
+
         InitLamps();
         InitNotes();
-        _keypad.OnAccessGranted.AddListener(() => PuzzleComplete(_notesKeySpawner));
     }
 
     private void OnDestroy()
     {
         SwitchLamp.OnSwitch -= SwitchLamp_OnSwitch;
+        UnlockPadlock.OnUnlock -= UnlockPadlock_OnUnlock;
     }
 
     #region Lamps
@@ -95,5 +101,11 @@ public class GameManager : MonoBehaviour
     {
         ks.Spawn();
         _player.Play();
+    }
+
+    private void UnlockPadlock_OnUnlock()
+    {
+        _unlockedPadlocks++;
+        if (_unlockedPadlocks == 2) SceneManager.LoadScene("MainMenu");
     }
 }
