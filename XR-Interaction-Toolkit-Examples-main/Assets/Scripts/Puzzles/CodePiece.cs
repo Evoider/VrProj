@@ -32,6 +32,7 @@ public class CodePiece : MonoBehaviour
 
     private IEnumerator Dissolve()
     {
+        _text.gameObject.SetActive(false);
         _vfx.gameObject.SetActive(true);
         _vfx.Play();
         Destroy(GetComponent<SpawnVariant>().Variant);
