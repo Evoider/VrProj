@@ -19,8 +19,6 @@ public class GameManager : MonoBehaviour
 
     [Header("Music & Sounds")]
     [SerializeField] private AudioSource _player;
-    [SerializeField] private AudioClip _successSound;
-    [SerializeField] private AudioMixer _mixer;
 
     private bool[] _lamps;
 
@@ -96,7 +94,6 @@ public class GameManager : MonoBehaviour
     private void PuzzleComplete(KeySpawner ks)
     {
         ks.Spawn();
-        _mixer.outputAudioMixerGroup = _mixer.FindMatchingGroups("SFX")[0];
-        _player.PlayOneShot(_successSound);
+        _player.Play();
     }
 }
