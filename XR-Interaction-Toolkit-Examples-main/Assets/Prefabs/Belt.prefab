@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1025898368684330106}
   - component: {fileID: 3560709119173045039}
   - component: {fileID: 9174937614792018026}
+  - component: {fileID: 4678973476894874107}
   m_Layer: 0
   m_Name: Belt
   m_TagString: Untagged
@@ -98,11 +99,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0235afb59a02814a9e4ed6ead147ddd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numSegments: 32
+  numSegments: 512
   numSides: 16
   majorRadius: 0.3
   minorRadius: 0.02
   edgeThickness: 0.1
+--- !u!114 &4678973476894874107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114561562906096158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cc7a1db2daef9a43a91a4084ed741b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _head: {fileID: 0}
+  _yOffset: -0.5
 --- !u!1001 &222025119568143631
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -113,7 +128,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2016822741479263978, guid: 6f83ec7510a120b43bf31529ee9e2d8a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.41
       objectReference: {fileID: 0}
     - target: {fileID: 2016822741479263978, guid: 6f83ec7510a120b43bf31529ee9e2d8a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -121,7 +136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2016822741479263978, guid: 6f83ec7510a120b43bf31529ee9e2d8a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.7
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 2016822741479263978, guid: 6f83ec7510a120b43bf31529ee9e2d8a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -155,6 +170,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ItemSlot_Left
       objectReference: {fileID: 0}
+    - target: {fileID: 9204308611160031608, guid: 6f83ec7510a120b43bf31529ee9e2d8a, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -175,7 +194,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2016822741479263978, guid: 6f83ec7510a120b43bf31529ee9e2d8a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.479
       objectReference: {fileID: 0}
     - target: {fileID: 2016822741479263978, guid: 6f83ec7510a120b43bf31529ee9e2d8a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -183,7 +202,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2016822741479263978, guid: 6f83ec7510a120b43bf31529ee9e2d8a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.7
+      value: -0.003
       objectReference: {fileID: 0}
     - target: {fileID: 2016822741479263978, guid: 6f83ec7510a120b43bf31529ee9e2d8a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -216,6 +235,10 @@ PrefabInstance:
     - target: {fileID: 3441164678904556417, guid: 6f83ec7510a120b43bf31529ee9e2d8a, type: 3}
       propertyPath: m_Name
       value: ItemSlot_Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 9204308611160031608, guid: 6f83ec7510a120b43bf31529ee9e2d8a, type: 3}
+      propertyPath: m_InteractionLayers.m_Bits
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

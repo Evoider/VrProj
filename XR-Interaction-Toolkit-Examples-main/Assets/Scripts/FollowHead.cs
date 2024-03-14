@@ -10,6 +10,14 @@ public class FollowHead : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        gameObject.transform.position = new Vector3(_head.position.x, _head.position.y + _yOffset, _head.position.z);
+        Vector3 headPos = _head.position;
+        headPos.y += _yOffset;
+        gameObject.transform.position = headPos;
+        
+        Quaternion headRot = _head.rotation;
+        headRot.x = 0;
+        //headRot.y += 90;
+        headRot.z = 0;
+        gameObject.transform.rotation = headRot;
     }
 }
