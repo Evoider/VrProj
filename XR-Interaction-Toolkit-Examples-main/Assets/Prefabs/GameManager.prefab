@@ -177,4 +177,4 @@ MonoBehaviour:
   _notesKeySpawner: {fileID: 0}
   _keypad: {fileID: 0}
   _notes: []
-  _puzzleSolved: {fileID: 0}
+  _puzzleSolved: {fileID: 9210360434328384573}
